@@ -1,0 +1,156 @@
+# =========================
+# ENV / SECRETS
+# =========================
+.env
+.env.*
+.env*.local
+*.env
+*.env.local
+
+# =========================
+# PYTHON
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Packaging
+*.egg-info/
+*.egg
+.eggs/
+*.whl
+build/
+dist/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+coverage/
+htmlcov/
+
+# Type checking / lint
+.mypy_cache/
+.ruff_cache/
+.pyre/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# =========================
+# ML / DATA (VERY IMPORTANT)
+# =========================
+# Models
+backend/models/*.joblib
+backend/models/*.pkl
+backend/models/*.h5
+backend/models/*.pt
+backend/models/*.pth
+backend/models/*.onnx
+*.safetensors
+
+# Data files
+backend/data/raw/
+backend/data/cleaned/
+
+# Large datasets
+*.parquet
+*.feather
+*.hdf5
+*.db
+
+# =========================
+# NODE / FRONTEND
+# =========================
+node_modules/
+**/node_modules/
+
+# Build outputs
+.next/
+.nuxt/
+.output/
+dist/
+build/
+
+# Package managers
+.pnpm-store/
+.npm/
+.yarn/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Framework caches
+frontend/.tanstack/
+*.tsbuildinfo
+
+# =========================
+# DOCKER
+# =========================
+docker-compose.override.yml
+*.pid
+*.seed
+*.pid.lock
+
+# =========================
+# DATABASE
+# =========================
+*.sqlite3
+*.db
+*.db-journal
+
+# =========================
+# LOGS
+# =========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# IDE / EDITOR
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.history/
+
+# =========================
+# OS FILES
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================
+# CACHE / TEMP
+# =========================
+.cache/
+.tmp/
+.temp/
+*.tmp
+*.bak
+
+# =========================
+# SECURITY / KEYS
+# =========================
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# =========================
+# MISC
+# =========================
+*.lock
