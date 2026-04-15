@@ -1,5 +1,6 @@
 from pydantic import BaseModel, Field
 
+
 class PredictRequest(BaseModel):
     age: int = Field(..., ge=1, le=120, alias="Age")
     gender: str = Field(..., alias="Gender")
@@ -11,6 +12,7 @@ class PredictRequest(BaseModel):
     medication: str = Field(..., alias="Medication")
 
     model_config = {"populate_by_name": True}
+
 
 class PredictResponse(BaseModel):
     predicted_test_result: str
