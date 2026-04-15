@@ -1,2 +1,8 @@
-/* src/styles/app.css */
 @import 'tailwindcss' source('../');
+
+/* smooth transitions everywhere */
+*, *::before, *::after {
+  transition-property: background-color, border-color, color, opacity;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+}
